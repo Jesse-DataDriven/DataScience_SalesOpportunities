@@ -77,5 +77,34 @@ A análise será conduzida em **Python**, com notebooks desenvolvidos no **Googl
 
 ---
 
-## 📂 Estrutura Sugerida do Repositório
+## 📂 Estrutura do Repositório
+📁 analise-de-vendas
+├── 📁 data/                # Bases de dados brutas e tratadas
+├── 📁 notebooks/           # Notebooks de análise
+├── 📁 src/                 # Scripts auxiliares
+├── 📁 reports/             # Relatórios e gráficos gerados
+├── README.md               # Documentação principal
+└── requirements.txt        # Dependências do projeto
 
+
+---
+
+## 🎯 Resultado Esperado
+
+- Identificação dos KPIs mais sensíveis ao aumento de vendas  
+- Diagnóstico da saúde dos indicadores  
+- Modelos estatísticos e preditivos para suporte à decisão  
+- Visualizações claras e acionáveis  
+- Insights estratégicos para crescimento sustentável  
+
+---
+
+## 🔄 Próximos Passos
+
+- Importar e tratar a base de vendas  
+- Criar análises exploratórias iniciais  
+- Aplicar técnicas estatísticas listadas  
+- Construir modelos preditivos  
+- Gerar relatório final com recomendações  
+
+---
