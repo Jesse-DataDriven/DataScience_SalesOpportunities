@@ -1,1 +1,1 @@
-
+> **Nota de Confidencialidade:** Devido a políticas de LGPD, dados sensíveis e nomes de colunas reais foram omitidos ou mascarados. Para análises horizontais, o nome dos agentes foi codificado no formato (Codinome&ID). O foco deste repositório é demonstrar a arquitetura da solução e os diagnósticos obtidos em contribuição ao negócio.
