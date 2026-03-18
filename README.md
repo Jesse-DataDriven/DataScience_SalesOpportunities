@@ -110,3 +110,90 @@ A análise será conduzida em **Python**, com notebooks desenvolvidos no **Googl
 - Gerar relatório final com recomendações  
 
 ---
+
+## 📌 Conclusões da Análise Científica de Vendas
+
+A análise estatística e multivariada dos KPIs revelou um comportamento operacional dividido em **dois motores distintos**, indicando que a operação não funciona como um sistema homogêneo. Esse achado é central para qualquer decisão estratégica futura.
+
+### 🔍 Diagnóstico Estrutural dos KPIs
+- Os indicadores apresentam **duas dinâmicas independentes**, sugerindo que parte da operação responde a estímulos comerciais enquanto outra parte responde a critérios de qualidade.
+- Caso a estratégia deseje **aumentar a correlação entre os KPIs**, será necessária uma **revisão profunda dos critérios de Qualidade** aplicados no processo de vendas.
+- Se a estratégia for manter a **Qualidade como guardião do processo**, a estrutura atual está coerente com esse objetivo.
+
+### 🚨 Risco Operacional: ABS e Instabilidade
+Os ensaios estatísticos (dispersão, fator Bond, coeficiente de variação, cartas de controle e DQL) apontaram:
+
+- **Instabilidade significativa** nos indicadores de ABS.
+- **Descontrole estatístico**, sugerindo risco operacional em médio e longo prazo.
+- Impactos diretos em:
+  - Turnover  
+  - Processos de Recrutamento & Seleção prolongados  
+  - Formação inicial acima do esperado para o segmento  
+- A recomendação inicial é a operação trabalhar com:
+  - **ABS ≈ 7%**
+  - **Turnover variando entre 5% e 8%**
+
+Diante disso, é **altamente recomendado abrir um DMAIC específico para ABS**, com foco em estabilização e controle.
+
+### 📈 Regressão Múltipla e Cruzada
+A análise inicial sugere:
+
+- **Strike_Rate** deve ser tratado como variável resposta principal.
+- **Hit_Rate**, apesar da colinearidade, deve ser testado:
+  - junto com Strike_Rate  
+  - e isoladamente  
+
+Isso porque a percepção operacional indica que **um não necessariamente chama o outro**, apesar da correlação estatística.  
+O objetivo é validar ou refutar essa hipótese, evitando viés de confirmação.
+
+### 🧪 DQL, MLP e RNA — Hipóteses Estratégicas
+- O **DQL** mostrou que o planejamento estratégico de divisão de carteira está correto: não há perda de timing do lead.
+- Entretanto, **MLP e RNA** levantaram uma hipótese crítica:
+  - possível **ineficiência de penetração de carteira** no trade-off **Qualidade × Comercial**.
+- Essa hipótese **não foi testada neste ensaio**, mas deve ser tratada como **próximo passo prioritário**.
+
+---
+
+## 🔮 Próximos Passos Científicos
+
+### 📅 1. Ampliar a série histórica
+- Mínimo de **24 meses** para:
+  - viabilizar **SARIMA** com sazonalidade real  
+  - aumentar robustez dos modelos preditivos  
+- A série atual opera no limite da significância estatística.
+
+### 👥 2. Clusterização de agentes por perfil de carteira
+- Segmentar agentes por:
+  - volume  
+  - ticket  
+  - categoria de cliente  
+- Objetivo: identificar se o trade-off **Qualidade × Comercial** é:
+  - comportamental (perfil do agente)  
+  - ou estrutural (planejamento da carteira)
+
+### 🧪 3. Validar hipótese de penetração de carteira
+- Testar se agentes com maior diversidade de PDVs apresentam queda sistemática de qualidade.
+- Controlar por tipo de carteira.
+- Se confirmado: o problema é **planejamento**, não **performance individual**.
+
+### 📉 4. Regressão múltipla em dois cenários
+Rodar modelos com:
+- **Strike_Rate isolado**
+- **Hit_Rate isolado**
+
+Comparar:
+- coeficientes  
+- resíduos  
+- significância  
+
+Se convergirem → colinearidade operacional confirmada.  
+Se divergirem → existem drivers distintos que a correlação simples não capturou.
+
+### 🤖 5. Validação real dos modelos de ML
+- Separar **20% da série como holdout temporal** antes de treinar MLP e RNA.
+- Objetivo: garantir que o R² reflita **capacidade preditiva real**, não ajuste ao treino.
+
+---
+
+Essas conclusões consolidam o diagnóstico atual e apontam um caminho claro para aprofundar a análise científica, reduzir riscos operacionais e orientar decisões estratégicas baseadas em evidências.
+
