@@ -101,7 +101,7 @@ A análise será conduzida em **Python**, com notebooks desenvolvidos no **Googl
 
 ---
 
-## 🔄 Próximos Passos
+## 🔄 Plano de execução das analises
 
 - Importar e tratar a base de vendas  
 - Criar análises exploratórias iniciais  
